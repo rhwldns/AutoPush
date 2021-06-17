@@ -1,8 +1,8 @@
 from os import popen
-import asyncio
+from time import time
 
 while True:
-  await asyncio.sleep(60 * 5)
+  time.sleep(60 * 5)
   popen("git add .")
   popen('git commit -m "feat: some functions ㅣ AutoPush"')
   popen("git push")
